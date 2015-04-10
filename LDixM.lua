@@ -1,5 +1,4 @@
 require "allen"
---local dicc = require "LDix"
 local insert = table.insert
 local sort = table.sort
 local concat = table.concat
@@ -45,7 +44,7 @@ local busc = function (arg)
       local dicc = require "LDix"
       local diccionario = abrir("LDix.lua","a+")
       u = lowerFirst(v)
-     if not dix[u] then
+      if not dix[u] then
         print(u,"\nIngrese: ")
         local ag = leer()
         diccionario:write("\ndix['"..u.."'] "..'='.." '"..ag.."'")
