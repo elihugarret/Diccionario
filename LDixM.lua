@@ -1,4 +1,5 @@
-require "allen"
+require "allen" -- Llama al módulo Allen, para un mejor manejo de Strings
+-- Variables locales
 local insert = table.insert
 local sort = table.sort
 local concat = table.concat
@@ -8,11 +9,11 @@ local status = coroutine.status
 local yield = coroutine.yield
 local abrir = io.open
 local leer = io.read
-local texto = abrir("text.txt")
-local out = abrir("out.txt","a+")
+local texto = abrir("text.txt") -- Texto de entrada
+local out = abrir("out.txt","a+") -- Texto de salida
 
 local palabras 
-
+-- Co-rutina que analiza y le da foramto línea por línea a un texto de entrada
 local iter = create(
   function ()
     local sus
