@@ -78,7 +78,7 @@ while true do
   busc(palabras)
 end
 
-sort(tab)
+sort(tab) -- Comentar para no ordenar las palabras en orden alfabético
 
 escribir(tab)
 out:close()
